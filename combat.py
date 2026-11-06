@@ -6,6 +6,7 @@ from item import ITEMS
 from player import add_xp
 from quest import record_monster_victory, complete_boss_quest
 from utils import ask, good, warn, bad, info
+from game_map import starting_position
 
 def battle(player, final_boss=False):
     monster = ShadowKing() if final_boss else create_random_monster(player["current_map"])
